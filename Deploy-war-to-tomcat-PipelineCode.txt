@@ -20,7 +20,7 @@ node{
           scp -o StrictHostKeyChecking=no target/*.war ec2-user@13.233.127.110:/opt/tomcat8/webapps/
 	  ssh ec2-user@13.233.127.110 /opt/tomcat8/bin/startup.sh
 	 """
-	 
+      //sh 'scp -o StrictHostKeyChecking=no target/*.war ec2-user@13.233.127.110:/opt/tomcat8/webapps/'
       }
     
     }
