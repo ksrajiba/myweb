@@ -16,7 +16,7 @@ node{
     sshagent(['tomcat-deploy']){
     
       sh """ 
-          ssh ec2-user@13.233.127.110 /opt/tomcat8/bin/shoutdown.sh
+          ssh ec2-user@13.233.127.110 /opt/tomcat8/bin/shutdown.sh
           scp -o StrictHostKeyChecking=no target/*.war ec2-user@13.233.127.110:/opt/tomcat8/webapps/
 	  ssh ec2-user@13.233.127.110 /opt/tomcat8/bin/startup.sh
 	 """
